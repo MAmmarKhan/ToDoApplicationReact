@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div className="MainContainer">
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 

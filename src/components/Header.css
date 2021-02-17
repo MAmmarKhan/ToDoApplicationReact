@@ -1,0 +1,27 @@
+.App-header{
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #4800A7;
+  padding: 20px;
+}
+.App-header nav ul{
+  display: flex;
+  list-style-type: none;
+  
+}
+.App-header nav ul li{
+  margin-right: 30px;
+  font-size: 20px;
+  
+}
+
+.App-header nav ul li a{
+  text-decoration: none;
+}
+.App-header h1{
+  font-size: 44px;
+}

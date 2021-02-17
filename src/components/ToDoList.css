@@ -1,0 +1,91 @@
+#main-todo{
+  max-width: 60%;
+  margin: auto;
+  background-color: #658FF1;
+  border: 1px solid #808CFF;
+  border-radius: 25px;
+  padding-bottom: 10px;
+}
+#main-todo h1{
+  font-size: 36px;
+  color: #4800A7;
+}
+.todo-area{
+  max-width: 90%;
+  margin: auto;
+  font-family: 'Arvo', serif;
+}
+
+.todo-heading p{
+  color: #4800A7;
+}
+
+.input-div{
+  display: flex;
+  align-items: center;
+}
+.input-div input{
+  font-size: 20px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  font-family: 'Arvo', serif;
+
+}
+.input-div button{
+  background-color: #189224;
+  color: #ffffff;
+  font-size: 36px;
+  border: 0;
+  border-radius: 70%;
+  margin-left: 10px;
+  padding: 3px 10px;
+}
+.input-div button p{
+  padding: 0;
+  margin: 0;
+}
+.input-div button p:hover{
+  animation: xrotate 1.5s; 
+  
+}
+@keyframes xrotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(90deg);
+  }
+  
+}
+.todo-listing{  
+  background-color: #B6C2E4;
+  border-radius: 10px;
+  height: 45vh;
+  display: flex;
+  margin-top: 20px;
+  overflow: scroll;
+}
+
+.todo-listing ul{
+  list-style-type: none;
+  padding: 0;    
+  width: 100%;
+}
+.todo-listing ul li{
+  background-color: #fff;
+  
+  margin-top: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  padding: 0px 10px;
+  margin: 10px;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}

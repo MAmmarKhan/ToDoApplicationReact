@@ -1,6 +1,7 @@
 import { useState, React } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { AddToList, DeleteFromList } from '../Store/reducer';
+import './ToDoList.css';
 
 
 export default function TodoList() {
@@ -14,22 +15,34 @@ export default function TodoList() {
   //   title: "Title2"
   // }];
   return (
-    <div>
-      <h1>Counter</h1>
-      {Todos.map((props) => {
-        const id = props.id;
-        return (
-          <div style={{ display:'flex'}}>
-            <h1>{props.id}</h1>
-            <h3>{props.title}</h3>
-            <button onClick={() => dispatch(DeleteFromList(Todos.indexOf(props.title)))}> DELETE</button>
-          </div>
-        );
-      })}
-      
-      <h3>{AddToList.type}</h3>
-      <input placeholder="Add Todo.." type='text' onChange={(e) => setValue(e.target.value)} />
-      <button onClick={() => dispatch(AddToList(value))}>Add Todo</button>
-    </div>
+    <section id='main-todo'>
+    <div className='todo-area'>
+      <div className='todo-heading'>
+        <h1>My-List</h1>
+      </div>
+      <div className='input-div'>
+        <input id="myInput" placeholder='Enter Todo here...' onChange={(e) =>{ setValue(e.target.value)}} />
+        <button onClick={() => {
+          dispatch(AddToList(value));
+          document.getElementById('myInput').value = '';
+          }}><p>+</p></button>
+      </div>
+      <div className='todo-listing'>
+        <ul>
+          {Todos.map((props) => {
+            const id = props.id;
+            return (
+              <li>
+                <h3>{props.title}</h3>
+                <button onClick={ () => {
+                  dispatch(DeleteFromList(Todos.indexOf(props.title)));                  
+                  }}> DELETE</button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      </div>
+      </section>
   )
 }
