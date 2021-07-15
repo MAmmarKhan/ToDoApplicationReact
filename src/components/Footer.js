@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div>
       <footer id='footer'>
-        <p>Design by foxy developed by Safeer &copy; All rights reserved</p>
+        <p>Design by Developed by foxy  &copy; All rights reserved</p>
       </footer>
     </div>
   )

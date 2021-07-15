@@ -1,16 +1,15 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 
-//createSlice
 const todoSlice = createSlice({
   name: 'ToDoList',
   initialState: {
     Todos: [{
-      title: "Do the homework",//0
+      title: "Do the homework",
       completed: false
     },
     {
-      title: "Create Portfolio site",//1
+      title: "Create Portfolio site",
       completed: false
     },
     {
