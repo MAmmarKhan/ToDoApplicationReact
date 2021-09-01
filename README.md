@@ -4,6 +4,7 @@ A To-Do web application made on react-redux.
 # Deployed Link
 
 `Surge` http://farmtodo.surge.sh/
+`Surge` https://todo-fox.surge.sh/
 
 ## Available Scripts
 
